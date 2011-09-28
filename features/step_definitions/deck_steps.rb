@@ -8,5 +8,5 @@ end
 
 Then /^I can calculate the number of combinations there are if I choose (\d+) random cards$/ do |n|
   @calc = @deck.choose n.to_i
-
+  binding.pry
 end
