@@ -35,5 +35,18 @@ module Games
       end
 
     end
+
+    class RoundRobinTurns
+
+      def initialize(players)
+        @players = players
+      end
+
+      def each
+      end
+
+      
+    end
+    
   end
 end
