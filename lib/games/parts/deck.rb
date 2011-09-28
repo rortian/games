@@ -12,7 +12,6 @@ module Games
       def initialize(range)
         @range = range
         @size = range.count
-        require 'pry'
         binding.pry
       end
     end
