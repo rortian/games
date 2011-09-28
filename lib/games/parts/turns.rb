@@ -14,7 +14,7 @@ module Games
 
       def initialize(n)
         @n = n
-        @left = n
+        @left = n + 1
       end
 
       def over?
