@@ -10,3 +10,11 @@ Then /^There should be (\d+) turns$/ do |n|
   times.should == n
 end
 
+Given /^An indefinite game$/ do
+    pending # express the regexp above with the code you wish you had
+end
+
+Then /^It should play an indefinite number of turns$/ do
+    pending # express the regexp above with the code you wish you had
+end
+
