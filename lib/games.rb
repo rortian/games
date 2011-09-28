@@ -1,6 +1,6 @@
 
 module Games
-  require 'pry'
-  binding.pry
 
 end
+
+require 'games/parts/deck'
