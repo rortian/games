@@ -6,3 +6,6 @@ Then /^I have (\d+) cards to deal$/ do |hack|
   hack.to_i.should == @deck.size
 end
 
+Then /^I can calculate the number of combinations there are if I choose (\d+) random cards$/ do |arg1|
+  pending 
+end
