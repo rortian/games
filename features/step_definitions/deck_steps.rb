@@ -7,6 +7,8 @@ Then /^I have (\d+) cards to deal$/ do |hack|
 end
 
 Then /^I can calculate the number of combinations there are if I choose (\d+) random cards$/ do |n|
-  @calc = @deck.choose n.to_i
-  binding.pry
+  n = n.to_i
+  @calc = @deck.choose n
+  size = @deck.size
+  @calc.should == (1..size).reduce(:*)/((1..(size-n)).reduce(:*)*(1..n).reduce(:*))
 end
