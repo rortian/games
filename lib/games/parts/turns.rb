@@ -23,5 +23,17 @@ module Games
       end
 
     end
+
+    class IndefiniteTurns < Turns
+
+      def initialize(decider)
+        @decider = decider
+      end
+
+      def over?
+        @decider.over?
+      end
+
+    end
   end
 end
