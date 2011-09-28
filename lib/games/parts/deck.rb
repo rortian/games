@@ -10,6 +10,8 @@ module Games
     class NumberDeck
 
       def initialize(range)
+        @range = range
+        @size = range.count
         require 'pry'
         binding.pry
       end
