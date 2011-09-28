@@ -8,3 +8,7 @@ Feature: Decks
   Scenario: Possibilites (combinations)
     When I create a deck from 1 to 100
     Then  I can calculate the number of combinations there are if I choose 20 random cards
+
+  Scenario: Dealing
+    When I create a deck from 1 to 100
+    Then I can deal 30 cards

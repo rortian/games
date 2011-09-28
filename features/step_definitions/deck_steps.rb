@@ -12,3 +12,8 @@ Then /^I can calculate the number of combinations there are if I choose (\d+) ra
   size = @deck.size
   @calc.should == (1..size).reduce(:*)/((1..(size-n)).reduce(:*)*(1..n).reduce(:*))
 end
+
+Then /^I can deal (\d+) cards$/ do |arg1|
+    pending # express the regexp above with the code you wish you had
+end
+
