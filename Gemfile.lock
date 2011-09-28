@@ -21,6 +21,14 @@ GEM
       ruby_parser (~> 2.0.5)
       slop (~> 2.1.0)
       spoon (~> 0.0.1)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.4)
+    rspec-expectations (2.6.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.6.0)
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
     sexp_processor (3.0.7)
@@ -35,3 +43,4 @@ DEPENDENCIES
   cucumber
   json
   pry
+  rspec
