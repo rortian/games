@@ -2,17 +2,15 @@
 module Games
   module Parts
     
-    class Deck  
-
-      
+    class Deck
+      attr_reader :size
     end
 
-    class NumberDeck
+    class NumberDeck < Deck
 
       def initialize(range)
         @range = range
         @size = range.count
-        binding.pry
       end
     end
   end
