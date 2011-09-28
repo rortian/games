@@ -10,11 +10,28 @@ Then /^There should be (\d+) turns$/ do |n|
   times.should == n
 end
 
+class DumbProxy
+  attr_accessor :over
+
+  def initialize
+    @over = false
+  end
+
+  def over?
+    @over
+  end
+
+end
+
 Given /^An indefinite game$/ do
-    pending # express the regexp above with the code you wish you had
+  @proxy = DumbProxy.new
+  @game = Games::Parts::IndefiniteTurns.new @proxy
 end
 
 Then /^It should play an indefinite number of turns$/ do
-    pending # express the regexp above with the code you wish you had
+  times = 0
+  Thread.new { |t| sleep 0.03; @proxy.over = true }
+  @game.each { times += 1 }
+  times.should > 0
 end
 
