@@ -3,7 +3,7 @@ module Games
     class Turns
 
       def each
-        unless over?
+        while !over?
           yield
         end
       end
