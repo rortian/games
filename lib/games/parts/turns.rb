@@ -10,7 +10,7 @@ module Games
 
     end
 
-    class NTurns
+    class NTurns < Turns
 
       def initialize(n)
         @n = n
