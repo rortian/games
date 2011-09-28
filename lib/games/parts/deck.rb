@@ -32,6 +32,11 @@ module Games
       def initialize(range)
         @range = range
         @size = range.count
+        @array = range.to_a
+      end
+
+      def deal(n)
+        @array.sample(n)
       end
     end
   end
