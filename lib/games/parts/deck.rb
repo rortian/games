@@ -4,6 +4,10 @@ module Games
     
     class Deck
       attr_reader :size
+
+      def choose(n)
+        binding.pry
+      end
     end
 
     class NumberDeck < Deck
